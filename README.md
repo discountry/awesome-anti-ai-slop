@@ -20,7 +20,7 @@
 - Cookie-cutter cards, gradients, centered heroes, and meaningless animations in UI;
 - Design language, typography, spacing, and information hierarchy lacking judgment.
 
-This list is about raising output quality. Projects that only sell "undetectable" results are not included.
+Projects that only sell "undetectable" results are excluded.
 
 ## Selection Criteria
 
@@ -55,14 +55,14 @@ Inclusion criteria:
 | Project | Stars | Best for | Why it matters |
 |---|---:|---|---|
 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | [![Stars](https://img.shields.io/github/stars/pbakaus/impeccable?style=social)](https://github.com/pbakaus/impeccable) | Frontend / UI / design anti-slop | Fixes the template-gradient-hero look AI reliably generates. Most-starred project in this space. |
-| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | [![Stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=social)](https://github.com/Leonxlnx/taste-skill) | AI-built frontend taste | Skill framework that enforces layout, typography, motion, and spacing constraints on AI-built UIs. Plugs into Codex, Cursor, Claude Code. |
+| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | [![Stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=social)](https://github.com/Leonxlnx/taste-skill) | AI-built frontend taste | Skill framework that enforces layout, typography, motion, and spacing constraints on AI-built UIs. Supports Codex, Cursor, Claude Code. |
 | [blader/humanizer](https://github.com/blader/humanizer) | [![Stars](https://img.shields.io/github/stars/blader/humanizer?style=social)](https://github.com/blader/humanizer) | English writing humanizer | English writing de-slopper. Articles, docs, emails, copy. |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | [![Stars](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=social)](https://github.com/Imbad0202/academic-research-skills) | Research / academic workflow | Covers the full academic workflow — research quality, structure, and writing — not just surface humanizing. |
-| [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) | [![Stars](https://img.shields.io/github/stars/op7418/Humanizer-zh?style=social)](https://github.com/op7418/Humanizer-zh) | Chinese writing | Chinese de-slopper. Works on articles, academic drafts, WeChat posts, and business copy. |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | [![Stars](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=social)](https://github.com/Imbad0202/academic-research-skills) | Research / academic workflow | Academic toolkit covering research quality, structure, and writing — beyond surface humanizing. |
+| [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) | [![Stars](https://img.shields.io/github/stars/op7418/Humanizer-zh?style=social)](https://github.com/op7418/Humanizer-zh) | Chinese writing | Chinese de-slopper. Covers articles, academic drafts, WeChat posts, and business copy. |
 | [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) | [![Stars](https://img.shields.io/github/stars/hardikpandya/stop-slop?style=social)](https://github.com/hardikpandya/stop-slop) | Prompt rules / prose cleanup | Rules-based. Good starting point for a custom system prompt or Claude Project instruction file. |
 | [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | [![Stars](https://img.shields.io/github/stars/conorbronsdon/avoid-ai-writing?style=social)](https://github.com/conorbronsdon/avoid-ai-writing) | Detect + rewrite workflow | Two modes: detect AI patterns, then rewrite. Useful for content teams running drafts through a review pass. |
 | [peakoss/anti-slop](https://github.com/peakoss/anti-slop) | [![Stars](https://img.shields.io/github/stars/peakoss/anti-slop?style=social)](https://github.com/peakoss/anti-slop) | GitHub PR quality gate | GitHub Action that flags or closes low-quality AI-generated PRs before they land. |
-| [mshumer/unslop](https://github.com/mshumer/unslop) | [![Stars](https://img.shields.io/github/stars/mshumer/unslop?style=social)](https://github.com/mshumer/unslop) | Custom anti-slop instructions | Reads samples of your writing (or your brand's) and generates a custom instruction file from the patterns it finds. |
+| [mshumer/unslop](https://github.com/mshumer/unslop) | [![Stars](https://img.shields.io/github/stars/mshumer/unslop?style=social)](https://github.com/mshumer/unslop) | Custom anti-slop instructions | Reads samples of your writing or brand voice and generates a custom instruction file from the patterns it finds. |
 | [brandonwise/humanizer](https://github.com/brandonwise/humanizer) | [![Stars](https://img.shields.io/github/stars/brandonwise/humanizer?style=social)](https://github.com/brandonwise/humanizer) | CLI / local audit | Low stars, but ships scoring, analysis, diff, and suggestions as a local workflow rather than a cloud API. |
 
 ## Starter Stacks
@@ -101,16 +101,16 @@ Inclusion criteria:
 
 | Project | Stars | Type | Notes |
 |---|---:|---|---|
-| [blader/humanizer](https://github.com/blader/humanizer) | [![Stars](https://img.shields.io/github/stars/blader/humanizer?style=social)](https://github.com/blader/humanizer) | Skill | Removes AI traces from English writing, documentation, blogs, and emails. |
+| [blader/humanizer](https://github.com/blader/humanizer) | [![Stars](https://img.shields.io/github/stars/blader/humanizer?style=social)](https://github.com/blader/humanizer) | Skill | English writing de-slopper. Covers documentation, blogs, and emails. |
 | [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) | [![Stars](https://img.shields.io/github/stars/hardikpandya/stop-slop?style=social)](https://github.com/hardikpandya/stop-slop) | Skill / rules | Identifies banned phrases, structural templates, and sentence-level AI patterns. |
-| [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | [![Stars](https://img.shields.io/github/stars/conorbronsdon/avoid-ai-writing?style=social)](https://github.com/conorbronsdon/avoid-ai-writing) | Skill / workflow | Detect and Rewrite modes; great for content teams. |
+| [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | [![Stars](https://img.shields.io/github/stars/conorbronsdon/avoid-ai-writing?style=social)](https://github.com/conorbronsdon/avoid-ai-writing) | Skill / workflow | Detect and Rewrite modes, for content teams. |
 | [jalaalrd/anti-ai-slop-writing](https://github.com/jalaalrd/anti-ai-slop-writing) | [![Stars](https://img.shields.io/github/stars/jalaalrd/anti-ai-slop-writing?style=social)](https://github.com/jalaalrd/anti-ai-slop-writing) | Prompt | Lightweight rule pack targeting vocabulary, structure, punctuation, and formatting. |
 | [coderjatin/anti-slop-writing](https://github.com/coderjatin/anti-slop-writing) | [![Stars](https://img.shields.io/github/stars/coderjatin/anti-slop-writing?style=social)](https://github.com/coderjatin/anti-slop-writing) | Prompt | Compatible with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, etc. |
 | [stephenturner/skill-deslop](https://github.com/stephenturner/skill-deslop) | [![Stars](https://img.shields.io/github/stars/stephenturner/skill-deslop?style=social)](https://github.com/stephenturner/skill-deslop) | Skill | De-slops scientific and technical writing; targets formulaic structure, filler, and false agency. |
 | [rankgnar/deslop](https://github.com/rankgnar/deslop) | [![Stars](https://img.shields.io/github/stars/rankgnar/deslop?style=social)](https://github.com/rankgnar/deslop) | CLI | Detects and removes buzzwords, false profundity, and hollow transitions. |
 | [AUAggy/deslop](https://github.com/AUAggy/deslop) | [![Stars](https://img.shields.io/github/stars/AUAggy/deslop?style=social)](https://github.com/AUAggy/deslop) | VS Code / rewrite | Rewrites selected text under strict rules without generating new content. |
 | [gabelul/slopbuster](https://github.com/gabelul/slopbuster) | [![Stars](https://img.shields.io/github/stars/gabelul/slopbuster?style=social)](https://github.com/gabelul/slopbuster) | Audit / rules | Audits prose, code, and academic writing; includes multi-mode audit approaches. |
-| [ksanyok/TextHumanize](https://github.com/ksanyok/TextHumanize) | [![Stars](https://img.shields.io/github/stars/ksanyok/TextHumanize?style=social)](https://github.com/ksanyok/TextHumanize) | Library | Offline algorithm library for multilingual text normalization; should not be treated as a detector-bypass guarantee. |
+| [ksanyok/TextHumanize](https://github.com/ksanyok/TextHumanize) | [![Stars](https://img.shields.io/github/stars/ksanyok/TextHumanize?style=social)](https://github.com/ksanyok/TextHumanize) | Library | Offline multilingual text normalization library; unrelated to detector evasion. |
 | [HugoLopes45/llmstrip](https://github.com/HugoLopes45/llmstrip) | [![Stars](https://img.shields.io/github/stars/HugoLopes45/llmstrip?style=social)](https://github.com/HugoLopes45/llmstrip) | Rust CLI | Handles LLM traces in prose, code comments, and commit messages. |
 | [avectats7/anti-ai-writing](https://github.com/avectats7/anti-ai-writing) | [![Stars](https://img.shields.io/github/stars/avectats7/anti-ai-writing?style=social)](https://github.com/avectats7/anti-ai-writing) | Prompt | English/Spanish rule pack targeting banned words, phrases, and structures. |
 
@@ -118,17 +118,17 @@ Inclusion criteria:
 
 | Project | Stars | Type | Notes |
 |---|---:|---|---|
-| [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) | [![Stars](https://img.shields.io/github/stars/op7418/Humanizer-zh?style=social)](https://github.com/op7418/Humanizer-zh) | Skill | Primary Chinese de-AI-slop project; great for Chinese drafts, business copy, and academic papers. |
+| [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) | [![Stars](https://img.shields.io/github/stars/op7418/Humanizer-zh?style=social)](https://github.com/op7418/Humanizer-zh) | Skill | Chinese de-slopper. Covers drafts, business copy, and academic papers. |
 | [cangtianhuang/humanizer-academic-zh](https://github.com/cangtianhuang/humanizer-academic-zh) | [![Stars](https://img.shields.io/github/stars/cangtianhuang/humanizer-academic-zh?style=social)](https://github.com/cangtianhuang/humanizer-academic-zh) | Prompt / skill | Removes AI traces from Chinese academic writing. |
-| [marswjf/stop-slop-zh](https://github.com/marswjf/stop-slop-zh) | [![Stars](https://img.shields.io/github/stars/marswjf/stop-slop-zh?style=social)](https://github.com/marswjf/stop-slop-zh) | Skill / prompt | Bilingual (Chinese/English) de-slop skill; works with Claude Code, OpenClaw, Codex CLI, Cursor/Windsurf, etc. |
+| [marswjf/stop-slop-zh](https://github.com/marswjf/stop-slop-zh) | [![Stars](https://img.shields.io/github/stars/marswjf/stop-slop-zh?style=social)](https://github.com/marswjf/stop-slop-zh) | Skill / prompt | Bilingual (Chinese/English) de-slop skill; supports Claude Code, OpenClaw, Codex CLI, Cursor/Windsurf, etc. |
 | [shyuan/writing-humanizer](https://github.com/shyuan/writing-humanizer) | [![Stars](https://img.shields.io/github/stars/shyuan/writing-humanizer?style=social)](https://github.com/shyuan/writing-humanizer) | Plugin / skill | Traditional Chinese (Taiwan) writing humanizer. |
-| [1-SKILL/shuorenhua](https://github.com/1-SKILL/shuorenhua) | [![Stars](https://img.shields.io/github/stars/1-SKILL/shuorenhua?style=social)](https://github.com/1-SKILL/shuorenhua) | Skill | Chinese "speak like a human" rewriter; niche but with a clear direction. |
+| [1-SKILL/shuorenhua](https://github.com/1-SKILL/shuorenhua) | [![Stars](https://img.shields.io/github/stars/1-SKILL/shuorenhua?style=social)](https://github.com/1-SKILL/shuorenhua) | Skill | Chinese "speak like a human" rewriter; niche, narrow scope. |
 
 ## Academic Writing
 
 | Project | Stars | Type | Notes |
 |---|---:|---|---|
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | [![Stars](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=social)](https://github.com/Imbad0202/academic-research-skills) | Skill collection | Comprehensive skill set for academic research, paper writing, quality checking, and style calibration. |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | [![Stars](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=social)](https://github.com/Imbad0202/academic-research-skills) | Skill collection | Academic research toolkit: research quality, paper writing, and style calibration. |
 | [cangtianhuang/humanizer-academic-zh](https://github.com/cangtianhuang/humanizer-academic-zh) | [![Stars](https://img.shields.io/github/stars/cangtianhuang/humanizer-academic-zh?style=social)](https://github.com/cangtianhuang/humanizer-academic-zh) | Chinese academic | Anti-AI-trace prompt/skill dedicated to Chinese academic writing. |
 | [stephenturner/skill-deslop](https://github.com/stephenturner/skill-deslop) | [![Stars](https://img.shields.io/github/stars/stephenturner/skill-deslop?style=social)](https://github.com/stephenturner/skill-deslop) | Scientific / technical | De-slops scientific writing, technical blogs, and research communication. |
 | [gabelul/slopbuster](https://github.com/gabelul/slopbuster) | [![Stars](https://img.shields.io/github/stars/gabelul/slopbuster?style=social)](https://github.com/gabelul/slopbuster) | Audit | Prose/code/academic writing audit and scoring approach. |
@@ -137,20 +137,20 @@ Inclusion criteria:
 
 | Project | Stars | Type | Notes |
 |---|---:|---|---|
-| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | [![Stars](https://img.shields.io/github/stars/pbakaus/impeccable?style=social)](https://github.com/pbakaus/impeccable) | Frontend / UI skill | Top-tier frontend/UI/design anti-slop; great for fixing the templated feel of AI-generated web pages. |
-| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | [![Stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=social)](https://github.com/Leonxlnx/taste-skill) | Frontend skill framework | Gives your AI good taste. Emphasizes layout, typography, motion, spacing, design system, redesign audit, and image-to-code workflows. |
-| [mshumer/unslop](https://github.com/mshumer/unslop) | [![Stars](https://img.shields.io/github/stars/mshumer/unslop?style=social)](https://github.com/mshumer/unslop) | Instruction generator | Discovers the model's default patterns from text or visual samples and generates a reusable instruction file. |
-| [Wholiver/swiftui-design-skill](https://github.com/Wholiver/swiftui-design-skill) | [![Stars](https://img.shields.io/github/stars/Wholiver/swiftui-design-skill?style=social)](https://github.com/Wholiver/swiftui-design-skill) | SwiftUI design skill | SwiftUI design direction; great for improving mobile UI quality. |
-| [Hacksore/oghunt](https://github.com/Hacksore/oghunt) | [![Stars](https://img.shields.io/github/stars/Hacksore/oghunt?style=social)](https://github.com/Hacksore/oghunt) | Product Hunt filter | Removes AI listings from the Product Hunt feed; leans toward information noise governance. |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | [![Stars](https://img.shields.io/github/stars/pbakaus/impeccable?style=social)](https://github.com/pbakaus/impeccable) | Frontend / UI skill | Frontend/UI/design anti-slop for the templated look of AI-generated web pages. |
+| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | [![Stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=social)](https://github.com/Leonxlnx/taste-skill) | Frontend skill framework | Gives your AI good taste. Covers layout, typography, motion, spacing, design system, redesign audit, and image-to-code constraints. |
+| [mshumer/unslop](https://github.com/mshumer/unslop) | [![Stars](https://img.shields.io/github/stars/mshumer/unslop?style=social)](https://github.com/mshumer/unslop) | Instruction generator | Extracts the model's default patterns from text or visual samples and generates a reusable instruction file. |
+| [Wholiver/swiftui-design-skill](https://github.com/Wholiver/swiftui-design-skill) | [![Stars](https://img.shields.io/github/stars/Wholiver/swiftui-design-skill?style=social)](https://github.com/Wholiver/swiftui-design-skill) | SwiftUI design skill | SwiftUI design direction, mobile UI quality. |
+| [Hacksore/oghunt](https://github.com/Hacksore/oghunt) | [![Stars](https://img.shields.io/github/stars/Hacksore/oghunt?style=social)](https://github.com/Hacksore/oghunt) | Product Hunt filter | Removes AI listings from the Product Hunt feed. |
 
 ### Taste Skill install example
 
-```awesome-anti-ai-slop/README.md#L154-157
+```bash
 npx skills add https://github.com/Leonxlnx/taste-skill
 npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"
 ```
 
-Use it when the problem is not "this text sounds AI-generated", but "this interface looks AI-generated".
+For AI-generated interface problems. Text quality issues need a different tool.
 
 ## Code, PR & Engineering Slop
 
@@ -167,10 +167,10 @@ Use it when the problem is not "this text sounds AI-generated", but "this interf
 
 | Project | Stars | Type | Notes |
 |---|---:|---|---|
-| [lynote-ai/humanize-text](https://github.com/lynote-ai/humanize-text) | [![Stars](https://img.shields.io/github/stars/lynote-ai/humanize-text?style=social)](https://github.com/lynote-ai/humanize-text) | App | High-traction app-style AI text humanizer; best used as a naturalization editor only. |
-| [DadaNanjesha/AI-Text-Humanizer-App](https://github.com/DadaNanjesha/AI-Text-Humanizer-App) | [![Stars](https://img.shields.io/github/stars/DadaNanjesha/AI-Text-Humanizer-App?style=social)](https://github.com/DadaNanjesha/AI-Text-Humanizer-App) | App | App for formal, humanized, and academic-style rewriting. |
-| [brandonwise/humanizer](https://github.com/brandonwise/humanizer) | [![Stars](https://img.shields.io/github/stars/brandonwise/humanizer?style=social)](https://github.com/brandonwise/humanizer) | CLI / OpenClaw skill | Relatively complete local workflow with scoring, analysis, reporting, suggestions, scanning, and diffing. |
-| [rudra496/StealthHumanizer](https://github.com/rudra496/StealthHumanizer) | [![Stars](https://img.shields.io/github/stars/rudra496/StealthHumanizer?style=social)](https://github.com/rudra496/StealthHumanizer) | App / multi-provider | Multi-provider, multi-level rewriting; has a clear "stealth/bypass" inclination — use with caution. |
+| [lynote-ai/humanize-text](https://github.com/lynote-ai/humanize-text) | [![Stars](https://img.shields.io/github/stars/lynote-ai/humanize-text?style=social)](https://github.com/lynote-ai/humanize-text) | App | App-style AI text humanizer with high traction. Works best as an editing aid. |
+| [DadaNanjesha/AI-Text-Humanizer-App](https://github.com/DadaNanjesha/AI-Text-Humanizer-App) | [![Stars](https://img.shields.io/github/stars/DadaNanjesha/AI-Text-Humanizer-App?style=social)](https://github.com/DadaNanjesha/AI-Text-Humanizer-App) | App | App for formal and academic-style rewriting. |
+| [brandonwise/humanizer](https://github.com/brandonwise/humanizer) | [![Stars](https://img.shields.io/github/stars/brandonwise/humanizer?style=social)](https://github.com/brandonwise/humanizer) | CLI / OpenClaw skill | Local workflow: scoring, analysis, reporting, suggestions, scanning, diff. |
+| [rudra496/StealthHumanizer](https://github.com/rudra496/StealthHumanizer) | [![Stars](https://img.shields.io/github/stars/rudra496/StealthHumanizer?style=social)](https://github.com/rudra496/StealthHumanizer) | App / multi-provider | Multi-provider, multi-level rewriting; "stealth/bypass"-oriented, use with caution. |
 | [ZAYUVALYA/AI-Text-Humanizer](https://github.com/ZAYUVALYA/AI-Text-Humanizer) | [![Stars](https://img.shields.io/github/stars/ZAYUVALYA/AI-Text-Humanizer?style=social)](https://github.com/ZAYUVALYA/AI-Text-Humanizer) | App / paraphrasing | Context-aware paraphrasing; early stage. |
 | [dixon2004/ai-humanizer](https://github.com/dixon2004/ai-humanizer) | [![Stars](https://img.shields.io/github/stars/dixon2004/ai-humanizer?style=social)](https://github.com/dixon2004/ai-humanizer) | Web/local app | Small Gemini-powered humanizer. |
 | [puneethkotha/humanizer-workbench](https://github.com/puneethkotha/humanizer-workbench) | [![Stars](https://img.shields.io/github/stars/puneethkotha/humanizer-workbench?style=social)](https://github.com/puneethkotha/humanizer-workbench) | CLI / skill | Humanizer workbench; niche project. |
@@ -187,7 +187,7 @@ Use it when the problem is not "this text sounds AI-generated", but "this interf
 
 ## Niche / Experimental
 
-Lower traction, niche scope, or heavy "bypass" marketing. The rules and implementations are worth reading; the outputs are not worth depending on.
+Lower traction, niche scope, or heavy "bypass" marketing. Rules and implementations worth reading; outputs unreliable.
 
 | Project | Stars | Notes |
 |---|---:|---|
@@ -203,56 +203,56 @@ Lower traction, niche scope, or heavy "bypass" marketing. The rules and implemen
 
 ## How to Evaluate an Anti-Slop Tool
 
-Quick checklist before adopting a tool:
+Checklist before adopting a tool:
 
-1. **Synonym swap or actual rewrite?**  
-   Word-swapping and injected typos are the oldest tricks. Real improvement shows up in structure, pacing, and specificity — not just vocabulary.
+1. **Synonym swap or structural rewrite?**  
+   Low-quality humanizers rely on synonym swaps and injected typos. Meaningful improvement shows in structure, pacing, and specificity.
 
 2. **Does it promise to bypass detectors?**  
-   AI detectors have high false-positive rates and change constantly. Heavy "bypass Turnitin / GPTZero" promotion is a red flag, not a feature.
+   AI detectors have high false-positive rates and change constantly. Heavy "bypass Turnitin / GPTZero" promotion is a reliability warning.
 
-3. **Does it touch your facts?**  
-   Good rewriting keeps your facts, your position, and your caveats intact. If it invents details or softens hard claims, skip it.
+3. **Does it alter your facts?**  
+   Rewriting should preserve the original facts, position, and caveats. A tool that invents details or softens hard claims is unusable.
 
-4. **Can it slot into your actual setup?**  
-   CLI, pre-commit hook, GitHub Action, IDE plugin, shared prompt file — pick what fits, not what sounds impressive.
+4. **Does it fit your actual setup?**  
+   CLI, pre-commit hook, GitHub Action, IDE plugin, shared prompt file — choose by actual fit.
 
 5. **Are the rules readable?**  
-   Transparent rules are adjustable. A black-box API wrapper is a dependency you can't tune or audit.
+   Transparent rules are adjustable. A black-box API wrapper is a dependency you can neither tune nor audit.
 
 6. **Is it built for your domain?**  
-   Chinese prose slop, English blog slop, UI slop, and PR slop are different problems. A tool built for one rarely transfers cleanly to another.
+   Chinese prose, English blog, UI, and PR slop are different problems. A tool built for one domain rarely transfers to another.
 
 ## Suggested Workflow
 
 ### For writing
 
-1. Draft first — full and messy is fine.
+1. Draft first.
 2. Run anti-slop rules on structure, phrasing, rhythm.
-3. Add what only you know: specific numbers, real examples, edge cases, your actual opinion.
-4. Humanizer for local polish — not whole-document rewriting.
+3. Add what only the author knows: specific numbers, real examples, edge cases, opinions.
+4. Humanizer for local polish only.
 5. Fact-check before publishing.
 
 ### For frontend
 
-1. Know your product's personality and information hierarchy before touching a prompt — "make it beautiful" produces gradient soup.
+1. Define the product's personality and information hierarchy before generating any UI.
 2. Use [taste-skill](https://github.com/Leonxlnx/taste-skill) or [impeccable](https://github.com/pbakaus/impeccable) to set hard constraints on layout, type, motion, and spacing.
-3. Audit the output. Pull the template hero, the cheap gradient, the filler cards, the third CTA.
-4. Test with real content and real edge-state data, not a lorem ipsum shell.
+3. Audit the output: remove template heroes, cheap gradients, filler cards, redundant CTAs.
+4. Test with real content and real edge-state data.
 
 ### For code and PRs
 
-1. Write the edge cases, test expectations, and acceptance criteria before the AI writes the code.
-2. Gate the repo — linter or Action that blocks bulk AI-generated PRs.
-3. Every PR explains intent, risk, and how it's tested. "Refactor" is not an explanation.
-4. Review diffs skeptically: reordering, comment inflation, and fake abstractions are common AI moves.
-5. When you find a failure pattern, write it into the team agent rules so it doesn't repeat.
+1. Define edge cases, test expectations, and acceptance criteria before AI generates the code.
+2. Set up a linter or GitHub Action to block bulk AI-generated PRs.
+3. Every PR must explain intent, risk, and test approach. "Refactor" is not an explanation.
+4. Review diffs for reordering, comment inflation, and meaningless abstraction layers.
+5. Record failure patterns in the team agent rules.
 
 ## Contributing
 
 Submit a PR. Each entry needs:
 
-```awesome-anti-ai-slop/README.md#L258-264
+```markdown
 - [owner/repo](https://github.com/owner/repo) - One-sentence description of what it does.
   - Type: Skill / Prompt / CLI / App / GitHub Action / Linter / Directory
   - Best for: Chinese writing / English docs / Academic / Frontend / PR / Code quality / Design
