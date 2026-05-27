@@ -1,37 +1,38 @@
 # Awesome Anti AI Slop
 
-> 精选用于减少 **AI 味 / AI slop** 的开源项目、skills、prompts、CLI、GitHub Actions 与工作流。  
-> 目标是让文本、代码、PR、UI 和产品输出更自然、更具体、更有审美、更可维护，而不是追求“绕过检测器”。
+> 去除 AI 味工具合集。
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 ![Last Updated](https://img.shields.io/badge/updated-2026--05--27-blue)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 
+[English README](./README.md)
+
 ## What is AI slop?
 
-这里的 **AI slop** 指由 AI 生成或辅助生成时常见的低质量痕迹，例如：
+**AI slop** 是 AI 生成内容里那层一眼能认出来的廉价质感：
 
 - 空洞、模板化、过度平滑的文字；
-- “不仅……而且……”“总之”“值得注意的是”等机械连接词；
+- "不仅……而且……""总之""值得注意的是"等机械连接词；
 - 大量正确但没洞察的泛泛而谈；
 - 代码里看似完整但缺少边界条件、测试、异常处理；
 - PR 里批量生成的低质量改动；
 - UI 里千篇一律的卡片、渐变、居中 hero、无意义动效；
 - 设计语言、排版、间距、信息层级缺乏判断力。
 
-这个列表关注 **质量提升、风格校准、审美增强、工程治理**，不收录纯粹宣传“undetectable / bypass detector”的低质量项目。
+本列表只关注真实质量提升，不收宣传"绝对过检"的项目。
 
 ## Selection Criteria
 
-优先收录：
+收录标准：
 
-1. **开源且可直接使用**：Skill、Prompt、CLI、App、GitHub Action、linter、规则集。
-2. **真实解决 AI slop**：能改善文字、代码、PR、UI、设计或工作流质量。
-3. **有关注度或独特价值**：star / fork / 使用场景 / 实现质量至少有一项突出。
-4. **不是简单营销壳**：避免只包装第三方 API、只宣传绕过检测器、无实际规则或源码的项目。
-5. **可组合进工作流**：能放进 Claude Code、Codex、Cursor、ChatGPT、CI、pre-commit 或团队规范。
+1. **开源且可直接使用**：skill、prompt、CLI、app、GitHub Action、linter、规则集。
+2. **对质量有实质改善**：文字、代码、PR、UI 或设计，非同义词替换 API 的简单封装。
+3. **有可验证的价值**：star 数、fork 数、真实使用场景、实现质量，至少具备其一。
+4. **非营销空壳**：无源码、无规则集、以绕过检测为卖点的项目不予收录。
+5. **可集成至常见工作流**：Claude Code、Codex、Cursor、CI、pre-commit 或团队文档。
 
-> Star badge 是动态的，排序主要参考初次整理时的关注度与实用性。GitHub stars 会随时间变化。
+> Star 数据为整理时的快照，随时间变化。
 
 ## Contents
 
@@ -53,16 +54,16 @@
 
 | Project | Stars | Best for | Why it matters |
 |---|---:|---|---|
-| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | [![Stars](https://img.shields.io/github/stars/pbakaus/impeccable?style=social)](https://github.com/pbakaus/impeccable) | Frontend / UI / design anti-slop | 高关注度前端与设计反 AI 味工具，适合解决 AI 生成网页的模板感、廉价感和视觉同质化。 |
-| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | [![Stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=social)](https://github.com/Leonxlnx/taste-skill) | AI-built frontend taste | Anti-slop frontend framework for AI agents，强调 layout、typography、motion、spacing、design taste，可用于 Codex、Cursor、Claude Code 等。 |
-| [blader/humanizer](https://github.com/blader/humanizer) | [![Stars](https://img.shields.io/github/stars/blader/humanizer?style=social)](https://github.com/blader/humanizer) | English writing humanizer | 英文通用文本去 AI 味代表项目，适合文章、文档、邮件、产品文案。 |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | [![Stars](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=social)](https://github.com/Imbad0202/academic-research-skills) | Research / academic workflow | 学术研究与写作综合 skill 集，不是单纯 humanizer，而是研究质量与写作质量工具箱。 |
-| [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) | [![Stars](https://img.shields.io/github/stars/op7418/Humanizer-zh?style=social)](https://github.com/op7418/Humanizer-zh) | 中文写作 | 中文去 AI 味首选之一，适合中文文章、中文学术初稿、公众号、商业文案。 |
-| [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) | [![Stars](https://img.shields.io/github/stars/hardikpandya/stop-slop?style=social)](https://github.com/hardikpandya/stop-slop) | Prompt rules / prose cleanup | 规则型 anti-slop skill，适合作为自定义指令、system prompt、Claude Project 规则底稿。 |
-| [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | [![Stars](https://img.shields.io/github/stars/conorbronsdon/avoid-ai-writing?style=social)](https://github.com/conorbronsdon/avoid-ai-writing) | Detect + rewrite workflow | 支持发现 AI 写作痕迹并重写，适合内容团队、博客、产品文档。 |
-| [peakoss/anti-slop](https://github.com/peakoss/anti-slop) | [![Stars](https://img.shields.io/github/stars/peakoss/anti-slop?style=social)](https://github.com/peakoss/anti-slop) | GitHub PR quality gate | 用 GitHub Action 识别低质量或 AI slop PR，适合开源项目与团队仓库治理。 |
-| [mshumer/unslop](https://github.com/mshumer/unslop) | [![Stars](https://img.shields.io/github/stars/mshumer/unslop?style=social)](https://github.com/mshumer/unslop) | Custom anti-slop instructions | 从样本中发现模型默认套路并生成定制 instruction file，适合品牌、团队、产品风格校准。 |
-| [brandonwise/humanizer](https://github.com/brandonwise/humanizer) | [![Stars](https://img.shields.io/github/stars/brandonwise/humanizer?style=social)](https://github.com/brandonwise/humanizer) | CLI / local audit | 低星但实用，包含评分、分析、报告、建议、扫描、对比等本地工作流。 |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | [![Stars](https://img.shields.io/github/stars/pbakaus/impeccable?style=social)](https://github.com/pbakaus/impeccable) | Frontend / UI / design anti-slop | 专修 AI 生成网页那套标配：渐变、居中 hero、无情绪的卡片。这个方向目前最多星。 |
+| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | [![Stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=social)](https://github.com/Leonxlnx/taste-skill) | AI-built frontend taste | 给 AI 建的前端设 layout、字体、动效、间距约束的 skill 框架。接 Codex、Cursor、Claude Code。 |
+| [blader/humanizer](https://github.com/blader/humanizer) | [![Stars](https://img.shields.io/github/stars/blader/humanizer?style=social)](https://github.com/blader/humanizer) | English writing humanizer | 英文写作去 AI 味。文章、文档、邮件、文案都能用。 |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | [![Stars](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=social)](https://github.com/Imbad0202/academic-research-skills) | Research / academic workflow | 覆盖学术研究全流程，不只是润色——包括研究质量、结构、写法校准。 |
+| [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) | [![Stars](https://img.shields.io/github/stars/op7418/Humanizer-zh?style=social)](https://github.com/op7418/Humanizer-zh) | 中文写作 | 中文去 AI 味。文章、学术初稿、公众号、商业文案都能用。 |
+| [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) | [![Stars](https://img.shields.io/github/stars/hardikpandya/stop-slop?style=social)](https://github.com/hardikpandya/stop-slop) | Prompt rules / prose cleanup | 规则型。适合作为自定义 system prompt 或 Claude Project 指令文件的起点。 |
+| [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | [![Stars](https://img.shields.io/github/stars/conorbronsdon/avoid-ai-writing?style=social)](https://github.com/conorbronsdon/avoid-ai-writing) | Detect + rewrite workflow | 两个模式：先检测 AI 写作痕迹，再重写。适合内容团队做草稿 review。 |
+| [peakoss/anti-slop](https://github.com/peakoss/anti-slop) | [![Stars](https://img.shields.io/github/stars/peakoss/anti-slop?style=social)](https://github.com/peakoss/anti-slop) | GitHub PR quality gate | GitHub Action，在低质量 AI slop PR 合并前把它关掉。 |
+| [mshumer/unslop](https://github.com/mshumer/unslop) | [![Stars](https://img.shields.io/github/stars/mshumer/unslop?style=social)](https://github.com/mshumer/unslop) | Custom anti-slop instructions | 读你的写作样本（或品牌样本），从里面找出模型的默认套路，生成可复用的指令文件。 |
+| [brandonwise/humanizer](https://github.com/brandonwise/humanizer) | [![Stars](https://img.shields.io/github/stars/brandonwise/humanizer?style=social)](https://github.com/brandonwise/humanizer) | CLI / local audit | 星不多，但本地工作流做得完整：评分、分析、diff、建议，不依赖云端 API。 |
 
 ## Starter Stacks
 
@@ -71,7 +72,7 @@
 - [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) — 主力中文去 AI 味。
 - [cangtianhuang/humanizer-academic-zh](https://github.com/cangtianhuang/humanizer-academic-zh) — 中文学术写作专用。
 - [marswjf/stop-slop-zh](https://github.com/marswjf/stop-slop-zh) — 中英双语规则型 de-slop skill。
-- [1-SKILL/shuorenhua](https://github.com/1-SKILL/shuorenhua) — 中文“说人话”方向的小型项目。
+- [1-SKILL/shuorenhua](https://github.com/1-SKILL/shuorenhua) — 中文"说人话"方向的小型项目。
 
 ### 英文博客 / 文档 / 产品文案
 
@@ -100,34 +101,34 @@
 
 | Project | Stars | Type | Notes |
 |---|---:|---|---|
-| [blader/humanizer](https://github.com/blader/humanizer) | [![Stars](https://img.shields.io/github/stars/blader/humanizer?style=social)](https://github.com/blader/humanizer) | Skill | 英文通用写作、文档、博客、邮件去 AI 味。 |
+| [blader/humanizer](https://github.com/blader/humanizer) | [![Stars](https://img.shields.io/github/stars/blader/humanizer?style=social)](https://github.com/blader/humanizer) | Skill | 英文写作去 AI 味，文档、博客、邮件都能用。 |
 | [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) | [![Stars](https://img.shields.io/github/stars/hardikpandya/stop-slop?style=social)](https://github.com/hardikpandya/stop-slop) | Skill / rules | 识别 banned phrases、结构套路、句子级 AI 痕迹。 |
-| [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | [![Stars](https://img.shields.io/github/stars/conorbronsdon/avoid-ai-writing?style=social)](https://github.com/conorbronsdon/avoid-ai-writing) | Skill / workflow | Detect 与 Rewrite 两种模式，适合内容团队。 |
+| [conorbronsdon/avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | [![Stars](https://img.shields.io/github/stars/conorbronsdon/avoid-ai-writing?style=social)](https://github.com/conorbronsdon/avoid-ai-writing) | Skill / workflow | Detect 与 Rewrite 两种模式，内容团队用。 |
 | [jalaalrd/anti-ai-slop-writing](https://github.com/jalaalrd/anti-ai-slop-writing) | [![Stars](https://img.shields.io/github/stars/jalaalrd/anti-ai-slop-writing?style=social)](https://github.com/jalaalrd/anti-ai-slop-writing) | Prompt | 针对词汇、结构、标点、格式的轻量规则包。 |
 | [coderjatin/anti-slop-writing](https://github.com/coderjatin/anti-slop-writing) | [![Stars](https://img.shields.io/github/stars/coderjatin/anti-slop-writing?style=social)](https://github.com/coderjatin/anti-slop-writing) | Prompt | 可用于 Claude Code、Gemini CLI、Codex CLI、Copilot、Cursor 等。 |
 | [stephenturner/skill-deslop](https://github.com/stephenturner/skill-deslop) | [![Stars](https://img.shields.io/github/stars/stephenturner/skill-deslop?style=social)](https://github.com/stephenturner/skill-deslop) | Skill | 科学/技术写作 de-slop，针对公式化结构、filler、false agency。 |
 | [rankgnar/deslop](https://github.com/rankgnar/deslop) | [![Stars](https://img.shields.io/github/stars/rankgnar/deslop?style=social)](https://github.com/rankgnar/deslop) | CLI | 检测/移除 buzzwords、false profundity、空洞转折。 |
 | [AUAggy/deslop](https://github.com/AUAggy/deslop) | [![Stars](https://img.shields.io/github/stars/AUAggy/deslop?style=social)](https://github.com/AUAggy/deslop) | VS Code / rewrite | 选择文本后按严格规则重写，不生成新内容。 |
 | [gabelul/slopbuster](https://github.com/gabelul/slopbuster) | [![Stars](https://img.shields.io/github/stars/gabelul/slopbuster?style=social)](https://github.com/gabelul/slopbuster) | Audit / rules | prose、code、academic writing 审查，包含多模式 audit 思路。 |
-| [ksanyok/TextHumanize](https://github.com/ksanyok/TextHumanize) | [![Stars](https://img.shields.io/github/stars/ksanyok/TextHumanize?style=social)](https://github.com/ksanyok/TextHumanize) | Library | 离线算法库，多语言文本归一化；不应被当作检测器绕过保证。 |
-| [HugoLopes45/llmstrip](https://github.com/HugoLopes45/llmstrip) | [![Stars](https://img.shields.io/github/stars/HugoLopes45/llmstrip?style=social)](https://github.com/HugoLopes45/llmstrip) | Rust CLI | 处理 prose、代码注释、commit 信息里的 LLM 痕迹。 |
+| [ksanyok/TextHumanize](https://github.com/ksanyok/TextHumanize) | [![Stars](https://img.shields.io/github/stars/ksanyok/TextHumanize?style=social)](https://github.com/ksanyok/TextHumanize) | Library | 离线算法库，多语言文本归一化；不是检测器绕过工具。 |
+| [HugoLopes45/llmstrip](https://github.com/HugoLopes45/llmstrip) | [![Stars](https://img.shields.io/github/stars/HugoLopes45/llmstrip?style=social)](https://github.com/HugoLopes45/llmstrip) | Rust CLI | 清理 prose、代码注释、commit 信息里的 LLM 痕迹。 |
 | [avectats7/anti-ai-writing](https://github.com/avectats7/anti-ai-writing) | [![Stars](https://img.shields.io/github/stars/avectats7/anti-ai-writing?style=social)](https://github.com/avectats7/anti-ai-writing) | Prompt | 英语/西语规则包，针对 banned words、phrases、structures。 |
 
 ## Chinese Writing
 
 | Project | Stars | Type | Notes |
 |---|---:|---|---|
-| [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) | [![Stars](https://img.shields.io/github/stars/op7418/Humanizer-zh?style=social)](https://github.com/op7418/Humanizer-zh) | Skill | 中文去 AI 味主力项目，适合中文稿件、商业文案、中文论文初稿。 |
+| [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) | [![Stars](https://img.shields.io/github/stars/op7418/Humanizer-zh?style=social)](https://github.com/op7418/Humanizer-zh) | Skill | 中文去 AI 味主力。稿件、商业文案、论文初稿都能用。 |
 | [cangtianhuang/humanizer-academic-zh](https://github.com/cangtianhuang/humanizer-academic-zh) | [![Stars](https://img.shields.io/github/stars/cangtianhuang/humanizer-academic-zh?style=social)](https://github.com/cangtianhuang/humanizer-academic-zh) | Prompt / skill | 中文学术写作去 AI 痕迹。 |
-| [marswjf/stop-slop-zh](https://github.com/marswjf/stop-slop-zh) | [![Stars](https://img.shields.io/github/stars/marswjf/stop-slop-zh?style=social)](https://github.com/marswjf/stop-slop-zh) | Skill / prompt | 中英双语 de-slop skill，可用于 Claude Code、OpenClaw、Codex CLI、Cursor/Windsurf 等。 |
+| [marswjf/stop-slop-zh](https://github.com/marswjf/stop-slop-zh) | [![Stars](https://img.shields.io/github/stars/marswjf/stop-slop-zh?style=social)](https://github.com/marswjf/stop-slop-zh) | Skill / prompt | 中英双语 de-slop skill，接 Claude Code、OpenClaw、Codex CLI、Cursor/Windsurf 等。 |
 | [shyuan/writing-humanizer](https://github.com/shyuan/writing-humanizer) | [![Stars](https://img.shields.io/github/stars/shyuan/writing-humanizer?style=social)](https://github.com/shyuan/writing-humanizer) | Plugin / skill | 台湾繁中写作 humanizer。 |
-| [1-SKILL/shuorenhua](https://github.com/1-SKILL/shuorenhua) | [![Stars](https://img.shields.io/github/stars/1-SKILL/shuorenhua?style=social)](https://github.com/1-SKILL/shuorenhua) | Skill | 中文“说人话”改写，小众但方向明确。 |
+| [1-SKILL/shuorenhua](https://github.com/1-SKILL/shuorenhua) | [![Stars](https://img.shields.io/github/stars/1-SKILL/shuorenhua?style=social)](https://github.com/1-SKILL/shuorenhua) | Skill | 中文"说人话"改写，小众但方向明确。 |
 
 ## Academic Writing
 
 | Project | Stars | Type | Notes |
 |---|---:|---|---|
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | [![Stars](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=social)](https://github.com/Imbad0202/academic-research-skills) | Skill collection | 学术研究、论文写作、质量检查、风格校准的综合技能集。 |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | [![Stars](https://img.shields.io/github/stars/Imbad0202/academic-research-skills?style=social)](https://github.com/Imbad0202/academic-research-skills) | Skill collection | 学术研究全流程：研究质量、论文写法、风格校准，不只是润色。 |
 | [cangtianhuang/humanizer-academic-zh](https://github.com/cangtianhuang/humanizer-academic-zh) | [![Stars](https://img.shields.io/github/stars/cangtianhuang/humanizer-academic-zh?style=social)](https://github.com/cangtianhuang/humanizer-academic-zh) | Chinese academic | 中文学术写作专用 anti-AI-trace prompt/skill。 |
 | [stephenturner/skill-deslop](https://github.com/stephenturner/skill-deslop) | [![Stars](https://img.shields.io/github/stars/stephenturner/skill-deslop?style=social)](https://github.com/stephenturner/skill-deslop) | Scientific / technical | 科学写作、技术博客、研究沟通中的 de-slop。 |
 | [gabelul/slopbuster](https://github.com/gabelul/slopbuster) | [![Stars](https://img.shields.io/github/stars/gabelul/slopbuster?style=social)](https://github.com/gabelul/slopbuster) | Audit | prose/code/academic writing 审查与评分思路。 |
@@ -136,20 +137,20 @@
 
 | Project | Stars | Type | Notes |
 |---|---:|---|---|
-| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | [![Stars](https://img.shields.io/github/stars/pbakaus/impeccable?style=social)](https://github.com/pbakaus/impeccable) | Frontend / UI skill | 前端/UI/design anti-slop 第一梯队，适合纠正 AI 生成网页的模板感。 |
-| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | [![Stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=social)](https://github.com/Leonxlnx/taste-skill) | Frontend skill framework | Gives your AI good taste. 强调 layout、typography、motion、spacing、design-system、redesign audit 与 image-to-code 流程。 |
-| [mshumer/unslop](https://github.com/mshumer/unslop) | [![Stars](https://img.shields.io/github/stars/mshumer/unslop?style=social)](https://github.com/mshumer/unslop) | Instruction generator | 从文本或视觉样本中发现模型默认套路，生成可复用 instruction file。 |
-| [Wholiver/swiftui-design-skill](https://github.com/Wholiver/swiftui-design-skill) | [![Stars](https://img.shields.io/github/stars/Wholiver/swiftui-design-skill?style=social)](https://github.com/Wholiver/swiftui-design-skill) | SwiftUI design skill | SwiftUI 设计方向，适合移动端 UI 质量提升。 |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | [![Stars](https://img.shields.io/github/stars/pbakaus/impeccable?style=social)](https://github.com/pbakaus/impeccable) | Frontend / UI skill | 前端/UI/design anti-slop 第一梯队，专修 AI 生成网页的模板感。 |
+| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | [![Stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=social)](https://github.com/Leonxlnx/taste-skill) | Frontend skill framework | Gives your AI good taste. layout、typography、motion、spacing、design-system、redesign audit、image-to-code 都有约束。 |
+| [mshumer/unslop](https://github.com/mshumer/unslop) | [![Stars](https://img.shields.io/github/stars/mshumer/unslop?style=social)](https://github.com/mshumer/unslop) | Instruction generator | 从文本或视觉样本里找出模型默认套路，生成可复用 instruction file。 |
+| [Wholiver/swiftui-design-skill](https://github.com/Wholiver/swiftui-design-skill) | [![Stars](https://img.shields.io/github/stars/Wholiver/swiftui-design-skill?style=social)](https://github.com/Wholiver/swiftui-design-skill) | SwiftUI design skill | SwiftUI 设计方向，移动端 UI 质量提升。 |
 | [Hacksore/oghunt](https://github.com/Hacksore/oghunt) | [![Stars](https://img.shields.io/github/stars/Hacksore/oghunt?style=social)](https://github.com/Hacksore/oghunt) | Product Hunt filter | 从 Product Hunt 信息流中移除 AI listing，偏信息噪声治理。 |
 
 ### Taste Skill install example
 
-```bash
+```awesome-anti-ai-slop/README_CN.md#L154-157
 npx skills add https://github.com/Leonxlnx/taste-skill
 npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"
 ```
 
-Use it when the problem is not “this text sounds AI-generated”, but “this interface looks AI-generated”.
+问题不是"这段文字听起来像 AI 写的"，而是"这个界面看起来像 AI 建的"时，用这个。
 
 ## Code, PR & Engineering Slop
 
@@ -159,17 +160,17 @@ Use it when the problem is not “this text sounds AI-generated”, but “this 
 | [JordanGunn/agent-slop-lint](https://github.com/JordanGunn/agent-slop-lint) | [![Stars](https://img.shields.io/github/stars/JordanGunn/agent-slop-lint?style=social)](https://github.com/JordanGunn/agent-slop-lint) | Linter | 面向 agentic coding 的语言无关代码质量 linter。 |
 | [scanaislop/aislop](https://github.com/scanaislop/aislop) | [![Stars](https://img.shields.io/github/stars/scanaislop/aislop?style=social)](https://github.com/scanaislop/aislop) | Hook / MCP / quality gate | 面向 Claude Code、Cursor、Codex 的 AI 代码质量门禁。 |
 | [yuvrajangadsingh/vibecheck](https://github.com/yuvrajangadsingh/vibecheck) | [![Stars](https://img.shields.io/github/stars/yuvrajangadsingh/vibecheck?style=social)](https://github.com/yuvrajangadsingh/vibecheck) | JS/TS/Python linter | 类似 ESLint 的 AI slop 检测。 |
-| [adamcharnock/deslop](https://github.com/adamcharnock/deslop) | [![Stars](https://img.shields.io/github/stars/adamcharnock/deslop?style=social)](https://github.com/adamcharnock/deslop) | pre-commit prose lint | 提交前检查文档和 prose 中的 AI 写作模式。 |
-| [HugoLopes45/llmstrip](https://github.com/HugoLopes45/llmstrip) | [![Stars](https://img.shields.io/github/stars/HugoLopes45/llmstrip?style=social)](https://github.com/HugoLopes45/llmstrip) | CLI | 清理代码注释、commit message、prose 中的 LLM 痕迹。 |
+| [adamcharnock/deslop](https://github.com/adamcharnock/deslop) | [![Stars](https://img.shields.io/github/stars/adamcharnock/deslop?style=social)](https://github.com/adamcharnock/deslop) | pre-commit prose lint | 提交前检查文档和 prose 里的 AI 写作模式。 |
+| [HugoLopes45/llmstrip](https://github.com/HugoLopes45/llmstrip) | [![Stars](https://img.shields.io/github/stars/HugoLopes45/llmstrip?style=social)](https://github.com/HugoLopes45/llmstrip) | CLI | 清理代码注释、commit message、prose 里的 LLM 痕迹。 |
 
 ## Apps, CLIs & Workbenches
 
 | Project | Stars | Type | Notes |
 |---|---:|---|---|
-| [lynote-ai/humanize-text](https://github.com/lynote-ai/humanize-text) | [![Stars](https://img.shields.io/github/stars/lynote-ai/humanize-text?style=social)](https://github.com/lynote-ai/humanize-text) | App | App 型 AI text humanizer，关注度较高；建议只作为自然化编辑器使用。 |
+| [lynote-ai/humanize-text](https://github.com/lynote-ai/humanize-text) | [![Stars](https://img.shields.io/github/stars/lynote-ai/humanize-text?style=social)](https://github.com/lynote-ai/humanize-text) | App | App 型文本 humanizer，关注度较高。当编辑器用，别当检测绕过工具用。 |
 | [DadaNanjesha/AI-Text-Humanizer-App](https://github.com/DadaNanjesha/AI-Text-Humanizer-App) | [![Stars](https://img.shields.io/github/stars/DadaNanjesha/AI-Text-Humanizer-App?style=social)](https://github.com/DadaNanjesha/AI-Text-Humanizer-App) | App | 正式、人类化、学术风格改写 App。 |
-| [brandonwise/humanizer](https://github.com/brandonwise/humanizer) | [![Stars](https://img.shields.io/github/stars/brandonwise/humanizer?style=social)](https://github.com/brandonwise/humanizer) | CLI / OpenClaw skill | 本地评分、分析、报告、建议、扫描、对比等功能较完整。 |
-| [rudra496/StealthHumanizer](https://github.com/rudra496/StealthHumanizer) | [![Stars](https://img.shields.io/github/stars/rudra496/StealthHumanizer?style=social)](https://github.com/rudra496/StealthHumanizer) | App / multi-provider | 多 provider、多重写等级；“stealth/bypass”倾向明显，谨慎使用。 |
+| [brandonwise/humanizer](https://github.com/brandonwise/humanizer) | [![Stars](https://img.shields.io/github/stars/brandonwise/humanizer?style=social)](https://github.com/brandonwise/humanizer) | CLI / OpenClaw skill | 本地评分、分析、报告、建议、扫描、diff，不依赖云端 API。 |
+| [rudra496/StealthHumanizer](https://github.com/rudra496/StealthHumanizer) | [![Stars](https://img.shields.io/github/stars/rudra496/StealthHumanizer?style=social)](https://github.com/rudra496/StealthHumanizer) | App / multi-provider | 多 provider、多重写等级，"stealth/bypass"倾向明显，谨慎。 |
 | [ZAYUVALYA/AI-Text-Humanizer](https://github.com/ZAYUVALYA/AI-Text-Humanizer) | [![Stars](https://img.shields.io/github/stars/ZAYUVALYA/AI-Text-Humanizer?style=social)](https://github.com/ZAYUVALYA/AI-Text-Humanizer) | App / paraphrasing | 上下文感知 paraphrasing，早期阶段。 |
 | [dixon2004/ai-humanizer](https://github.com/dixon2004/ai-humanizer) | [![Stars](https://img.shields.io/github/stars/dixon2004/ai-humanizer?style=social)](https://github.com/dixon2004/ai-humanizer) | Web/local app | Gemini 驱动的小型 humanizer。 |
 | [puneethkotha/humanizer-workbench](https://github.com/puneethkotha/humanizer-workbench) | [![Stars](https://img.shields.io/github/stars/puneethkotha/humanizer-workbench?style=social)](https://github.com/puneethkotha/humanizer-workbench) | CLI / skill | humanizer workbench，小众项目。 |
@@ -186,7 +187,7 @@ Use it when the problem is not “this text sounds AI-generated”, but “this 
 
 ## Niche / Experimental
 
-这些项目关注度较低、场景较窄，或宣传口径里包含较多“undetectable / bypass”倾向。可以参考实现与规则，不建议无脑依赖。
+关注度低、场景窄，或"绕过检测"话术太重。规则和实现可以参考，但不要依赖。
 
 | Project | Stars | Notes |
 |---|---:|---|
@@ -202,57 +203,56 @@ Use it when the problem is not “this text sounds AI-generated”, but “this 
 
 ## How to Evaluate an Anti-Slop Tool
 
-使用任何 anti-slop / humanizer 工具前，建议检查：
+选工具前先问自己：
 
-1. **是否只是在同义词替换**  
-   低质量 humanizer 常常只是替换词、插入口语、增加错别字。真正有用的工具应该能改善结构、信息密度、细节、节奏、语气与上下文一致性。
+1. **它在换同义词，还是真的在改结构？**  
+   换词、插口语、加错别字是最老的把戏。真正有用的工具改的是结构、节奏、信息密度——不只是词汇表。
 
-2. **是否承诺绕过检测器**  
-   AI 检测器本身误判率高，且会不断变化。过度宣传“bypass Turnitin / GPTZero”的项目通常不值得信任。
+2. **它承诺绕过检测器吗？**  
+   AI 检测器误判率高且一直在变。大力宣传"bypass Turnitin / GPTZero"是警示信号，不是卖点。
 
-3. **是否保留事实与意图**  
-   好的改写不应凭空增加事实、不应改变观点、不应删除关键限制条件。
+3. **它会动你的事实吗？**  
+   好的改写保留你的事实、立场和限制条件。如果它凭空加细节或把强硬结论软化掉，跳过它。
 
-4. **是否支持你的工作流**  
-   最好能作为 skill、CLI、pre-commit、GitHub Action、IDE 插件或团队 prompt 直接接入。
+4. **它能接进你的实际工作流吗？**  
+   CLI、pre-commit、GitHub Action、IDE 插件、共享 prompt 文件——选能落地的，不是听起来全的。
 
-5. **是否有可维护规则**  
-   规则集越透明，越容易被团队调整。黑盒 API 包装器通常不利于长期使用。
+5. **规则看得懂吗？**  
+   透明的规则可以调整。黑盒 API 包装器是一个你既调不了、也审不了的依赖。
 
-6. **是否能处理你的语言与场景**  
-   中文、英文、学术、前端 UI、代码 PR、品牌文案的 slop 痕迹并不相同，尽量选择场景匹配的项目。
+6. **它是为你的场景造的吗？**  
+   中文 prose slop、英文博客 slop、UI slop、PR slop 是不同问题。为一种造的工具很少能干净地迁移到另一种。
 
 ## Suggested Workflow
 
 ### For writing
 
-1. 先让模型写出信息完整的初稿。
-2. 用 anti-slop 规则检查结构、措辞、节奏、空话。
-3. 手动补充个人经验、具体数据、案例、限制条件。
-4. 再用 humanizer 做局部润色，而不是整篇无脑改写。
-5. 最后做事实核查和风格统一。
+1. 先起草——乱也没关系。
+2. 用 anti-slop 规则过一遍结构、措辞、节奏。
+3. 加进去只有你能写的东西：具体数字、真实案例、边界条件、你的实际判断。
+4. Humanizer 做局部润色，不是整篇重写。
+5. 发布前做事实核查。
 
 ### For frontend
 
-1. 先定义产品气质、受众、信息层级，而不是直接让 AI “make it beautiful”。
-2. 用 [taste-skill](https://github.com/Leonxlnx/taste-skill) 或 [impeccable](https://github.com/pbakaus/impeccable) 约束布局、排版、动效、间距。
-3. 对 AI 生成 UI 做 redesign audit。
-4. 删除模板 hero、廉价渐变、无意义卡片、重复 CTA。
-5. 以真实内容和真实状态测试界面，而不是只看空壳 mockup。
+1. 在碰提示词之前，先搞清楚产品的气质和信息层级——"让它好看一点"只会产出渐变汤。
+2. 用 [taste-skill](https://github.com/Leonxlnx/taste-skill) 或 [impeccable](https://github.com/pbakaus/impeccable) 对 layout、字体、动效、间距设硬约束。
+3. 审查输出。把模板 hero、廉价渐变、占位卡片、第三个 CTA 都拔掉。
+4. 用真实内容和真实边界状态测试，不是 lorem ipsum 空壳。
 
 ### For code and PRs
 
-1. 为 AI 生成代码设置明确的边界条件、测试要求和验收标准。
-2. 用 linter / GitHub Action 阻止低质量批量 PR。
-3. 要求每个 PR 解释意图、风险、测试方式，而不是只提交“refactor”。
-4. 对 AI 改动做 diff review，不接受无意义重排、注释膨胀、假抽象。
-5. 把常见失败模式写进团队 agent rules。
+1. 在 AI 写代码之前，先写好边界条件、测试预期和验收标准。
+2. 把好入口——用 linter 或 Action 阻止批量 AI PR 合并。
+3. 每个 PR 说清楚意图、风险、怎么测。"Refactor"不是解释。
+4. 带着怀疑去看 diff：重排序、注释膨胀、假抽象是 AI 的惯用手法。
+5. 发现一个失败模式，就写进团队 agent rules，别让它重复出现。
 
 ## Contributing
 
-欢迎提交 PR。建议每个新增项目包含：
+提 PR 请带上：
 
-```markdown
+```awesome-anti-ai-slop/README_CN.md#L258-264
 - [owner/repo](https://github.com/owner/repo) - 一句话说明用途。
   - Type: Skill / Prompt / CLI / App / GitHub Action / Linter / Directory
   - Best for: 中文写作 / 英文文档 / 学术 / 前端 / PR / 代码质量 / 设计
@@ -260,13 +260,13 @@ Use it when the problem is not “this text sounds AI-generated”, but “this 
   - Caveat: 是否有检测器绕过宣传、是否维护不活跃、是否依赖闭源 API？
 ```
 
-不建议收录：
+不收：
 
-- 只宣传 “100% undetectable” 的项目；
-- 无源码、无规则、无文档的壳项目；
-- 重复 fork 且没有新增价值的项目；
+- 主要卖点是"100% undetectable"的；
+- 没有源码、没有规则、没有文档的壳；
+- fork 了但没加任何新东西的；
 - 纯闭源 SaaS；
-- 鼓励学术不诚信或规避检测责任的工具。
+- 帮人作弊的工具。
 
 ## License
 
