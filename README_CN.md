@@ -270,4 +270,4 @@ Use it when the problem is not “this text sounds AI-generated”, but “this 
 
 ## License
 
-建议使用 [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) 或 MIT 发布这个列表。正式开源前请在仓库中加入你选择的 LICENSE 文件。
+MIT
